@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b=0,digit;
+    cout<<"Masukkan angka : ";
+    cin>>a;
+    if(a<0)
+    {
+      cout<<"angka tidak valid karena negatif";
+    }
+    while(a!=0)
+    {
+        digit=a % 10;
+        b+=digit;
+        a/=10;
+    }
+    cout<<"hasil penjumlahan"<<a<<":"<<b<<endl;
+}
